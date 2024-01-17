@@ -25,7 +25,7 @@ st.subheader('User Input parameters')
 st.write(df)
 
 loaded_model = pickle.load(open("Advertising.h5", "rb")) #rb: read binary
-new_pred = loaded_model.predict(X_test) # testing (examination)
+new_pred = loaded_model.predict(df) # testing (examination)
 
 
 st.subheader('Prediction')
